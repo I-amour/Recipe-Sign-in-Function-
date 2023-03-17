@@ -109,3 +109,5 @@ document.getElementById("signupform").addEventListener('submit', function(event)
   registerUser();
   document.getElementById("signupform").reset();
 });
+
+// Very important!!: DO not forget to remove the console logs from the code, it's sort of unnecessary.
