@@ -77,7 +77,7 @@ function registerUser() {
                 .then(function() {
                   console.log("User signed in");
                   alert("Successfully Signed Up");
-                  window.location.href = "../../Recipe.html";
+                  window.location.href = "../../index.html";
                 })
                 .catch(function(error) {
                   console.error("Error signing in user:", error);
