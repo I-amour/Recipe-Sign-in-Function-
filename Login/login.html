@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+  <head>
+    <link rel="icon" href="../icons/favicon-16x16.png">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Login Page
+          <nav class="icon">
+              <a href="../Recipe.html"><img class= 'icon-img' src="../icons/icons8-home-50.png"></a>
+              <a href="rotd.html"><img class= 'icon-img' src="../icons/icons8-cooking-book-50.png"></a>
+            </nav>
+      </h1>
+  </header>
+    <form class='box' id="login-form">
+      <h1>Login </h1>
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+      </div>
+      <input type="email" name="email" placeholder="Enter Email" id="email-field">
+      <input type="password" name="password" placeholder="Enter Password" id="password-field">
+      <a class="f-pass" href="#">Forgot Password?</a>
+      <input type="submit" name="" onclick="UserLogin(event)" value="Login" id="login-form-submit">
+      <a href="signup/signin.html">
+      <input type="button" value="Signup">
+      </a>          
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

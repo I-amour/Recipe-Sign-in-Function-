@@ -1,0 +1,92 @@
+/* Global styles */
+html{
+    background-image: url(output.jpg);
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+  }
+  
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background-color: #5bc8af;
+    border-radius: 60px;
+    padding: 30px 20px;
+  }
+
+  
+.icon-img{
+    text-align: right;
+    transition: transform .5s;
+}
+.icon-img:hover{
+    transform: scale(1.2);
+}
+  
+  main {
+    padding: 16px;
+  }
+  
+
+  
+  ul,
+  ol {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Page-specific styles */
+
+  article {
+    color: white;
+    background-color: #202060;
+    opacity: 85%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 32px;
+  }
+  
+  #recipe-title {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  #recipe-image {
+    border-radius: 10%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  #recipe-summary {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  #recipe-ingredients li:before {
+    content: '•';
+    margin-right: 8px;
+    color: #444;
+  }
+  
+  #recipe-instructions li:before {
+    content: counter(step-counter) '.';
+    counter-increment: step-counter;
+    margin-right: 8px;
+    color: #444;
+  }
+  
