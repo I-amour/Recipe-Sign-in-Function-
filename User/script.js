@@ -169,7 +169,7 @@ var firebaseConfig = {
 
 } else {
   // No user is signed in
-  window.location.replace('../Recipe.html');
+  window.location.replace('../index.html');
 }
   });
   
