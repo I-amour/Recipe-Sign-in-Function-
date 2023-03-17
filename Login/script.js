@@ -26,7 +26,7 @@ var firebaseConfig = {
       // Signed in
       document.getElementById("login-error-msg-holder").style.display = "none";
       alert("Successful Login");
-      window.location.href = "../Recipe.html"; // redirect to recipes page
+      window.location.href = "../index.html"; // redirect to recipes page
     })
     .catch((error) => {
       var errorCode = error.code;
