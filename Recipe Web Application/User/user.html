@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../icons/favicon-16x16.png">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1 class="title">User Info
+        <nav class="icon">
+            <a href="../Recipe.html"><img class= 'icon-img' src="../icons/icons8-home-50.png"></a>
+            <a href="../Rotd/rotd.html"><img class= 'icon-img' src="../icons/icons8-cooking-book-50.png"></a>
+          </nav>
+    </h1>
+</header>
+<main>
+    <article>
+    <div id="user-info" class="user-info">
+      <img id="profile-pic" src="#" alt="Profile Picture">
+      <p> <span id="displayName"></span></p>
+      <p> <span id="email"></span></p>
+      <p> <span id="password"></span></p>
+      <input type="button" id="logout-btn" value="Log Out">
+    </div>
+</article>
+</main>
+<h1 class="title">My Recipes</h1>
+<main>
+    <article>
+        <div id="recipe-list"></div>
+        <form id="add-recipe-form" class="recipe-form">
+            <label for="recipe-name">Recipe Name</label>
+            <input type="text" id="recipe-name" required>
+            <label for="recipe-description">Recipe Description</label>
+            <input type="text" id="recipe-description" required>
+            <label for="recipe-ingredients">Ingredients (seperated by commas)</label>
+            <input type="text" id="recipe-ingredients" required>
+            <label for="recipe-instructions">Recipe Instructions (seperated by periods)</label>
+            <input type="text" id="recipe-instructions" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+    </article>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
