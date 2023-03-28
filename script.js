@@ -164,7 +164,7 @@ sharedRecipesRef.get().then((querySnapshot) => {
           recipeRef.collection('comments').add(commentData)
             .then(() => {
               commentInput.value = '';
-              window.location.href='Recipe.html';
+              window.location.href='index.html';
             })
             .catch((error) => {
               console.error('Error adding comment:', error);
